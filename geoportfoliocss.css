@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fcf4cc;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Added to allow vertical scrolling */
+}
+
+#main-title-page {
+    background-color: #d6c267;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute; /* Changed from fixed to absolute */
+}
+
+#main-title-page h1 {
+    font-size: 3em;
+    margin-top: 40vh;
+}
+
+#main-title-page h2 {
+    font-size: 1.5em;
+}
+
+#arrow {
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#links-page {
+    background-color: #fcf4cc;
+    position: fixed;
+    left: 100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    margin: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+#about-page, #academics-page, #experience-page, #skills-page {
+    background-color: #fcf4cc;
+    position: fixed;
+    left: 200vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: absolute; /* Changed from fixed to absolute */
+    overflow-y: auto; /* Added to allow vertical scrolling on these pages */
+}
+
+.back-arrow {
+    font-size: 2em;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    background-color: #d6c267;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #807e78;
+}
+
+p {
+    color: black;
+}
