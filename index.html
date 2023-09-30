@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head> <!--Contains Metadata only. Little needs to be changed in this section-->
+<meta charset="utf-8">
+<title>Geoportfolio</title> <!--Changes the name on the tab-->
+	<link rel="stylesheet" href="geoportfoliocss.css"> <!--#ID# #CSS# Put the name of your CSS document and file extension in href e.g. href="geoportfolio.css"-->
+	<link rel="icon" type="image/x-icon" href="favicon.png"> <!--#ID# #FAVICON# This changes the picture shown on the tab. Change the file name under href to your desired image e.g. href="favicon.png"-->
+</head>
+
+<body> <!--Everything in between <body> and </body> affects the display of your Geoportfolio and what is shown-->
+	<!--Start of navigation bar-->
+	<div id="sidebar" class="sidebar-animate-open" style="display:none"> <!--MUST BE AT TOP OF DOCUMENT-->
+		<button onclick="close_sidebar()" class="sidebar-menu-button close-sidebar-button">&times;</button>
+		<a href="#topofpage" class="sidebar-menu-button mainbutton">Home</a>
+		<a href="#about" class="sidebar-menu-button mainbutton">About</a>
+		<a href="#academicinfo" class="sidebar-menu-button mainbutton">Academic Information</a>
+		<a href="#industryexperience" class="sidebar-menu-button mainbutton">Industry Experience</a>
+		<a href="#sap" class="sidebar-menu-button mainbutton">Skills and Proficiencies</a>
+		<a href="#credits" class="sidebar-menu-button mainbutton">Acknowledgements</a>
+		<div class="other-sidebar-info">
+			<table class="sidebar-contact-table"> 
+				<tr>
+					<td>
+						<a href="https://au.linkedin.com/" target="_blank"><img src="linkedin.png" class="sidebar-images"></a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page -->
+					</td>
+					<td>
+						<a href="https://au.linkedin.com/" target="_blank">LinkedIn</a> <!-- #ID# #LINKEDIN# Change LinkedIn link to one of your profile page-->
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://twitter.com/RMIT" target="_blank"><img src="twitter.png" class="sidebar-images"></a>
+					</td>
+					<td>
+						<a href="https://twitter.com/RMIT" target="_blank">Twitter</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!--End of navigation bar-->
+
+	<div class="header"> <!--Code for Header that opens the sidebar. DO NOT TOUCH-->
+		<button class="sidebar-menu-button open-sidebar-button" onclick="open_sidebar()">&#9776;</button>
+	</div>
+	
+	<div class="mapbgdiv" id="topofpage">
+		<img src="mapwelcomemod.jpg" alt="map" class="mapbg">
+		<div class="title">
+			<h1>Geoportfolio</h1>
+			<h2>O.Dio</h2> <!-- #ID# #NAME# INSERT YOUR NAME HERE-->
+		</div>
+	</div>
+
+	<!--ABOUT-->
+	<div class="intro bar" id="about"><h2>About</h2></div> <!-- #ID# #INTROHEADING# Change the text of the introduction bar here-->
+	<div class="about">
+		This website is the geoportfolio of Ode Iou which was made for the subject Professional Practice (GEOMODO). The website entails
+		information that is academically and profesionally related to the field of geospatial science
+		<p>
+		A brief introduction about myself is that I am born and raised in Melbourne, Australia and as of September 1994, I am in my fourth and final year of the 
+		Bachelor of Science (Geospatial Science) (Honours) course. My geospatial-related interests is working with remote sensing data, collection and analysis of
+		aerial-captured imagery, distribution modelling and creating 3D generations of models using spatial data. My current geospatial projects involve distribution 
+		modelling of the flesh-footed shearwater bird species in the Recherche archipelago and assisting with the potential generation of a basic Digital Twin of
+		Honiara using open-source data and programs.
+		</p>
+		<p>
+		My own personal hobbies include jogging and travelling! More detailed information can be found in the About page!
+		</p>	
+	<img src="self-portrait.jpg" class="self-portrait"> 
+	<!-- #ID# #SELFPORTRAIT# Change the img src name to match the name of your own self-portrait or delete my image and name your image the same name and place it in the same folder -->
+	</div>
+	
+	<!--ACADEMIC PORTFOLIO-->
+	<div class="pagetitle" id="academicinfo">
+        <span class="title-ul">Academic Portfolio Overview</span>
+    </div>
+
+	<!--SUBJECT 1-->
+	
+	<div class="bar"><h2>Cartography</h2></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		Cartography consists of creating maps using spatial data obtained from sources such as publicly online government data and population numbers from the Australian
+		Bureau of Statistics (ABS). While there were two tests and a first practical (not included as it was more of a report rather than a map), the significant
+		practicals completed in Cartography 2 involved the production of three maps of the student's choice based on a specific topic:
+		<ul>
+			<li>Practical 2: Map directed at a target audience of choice using provided data of Melbourne City</li>
+			<li>Practical 3: Thematic mapping of a demographic's population using data from the Australian Bureau of Statistics (ABS)</li>
+			<li>Final Cartography Map: Free-choice on topic</li>
+		</ul>
+		<p>
+			Below are the three maps that I have created as part of my course:
+		</p>
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+	<div class="bar"><h3>Melbourne Map: All 7-11 locations in Melbourne City</h3></div>
+	<img src="Academic-Gallery/Cartography-Prac2.png" class="ls-image"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+
+	<!--SUBJECT 2-->
+
+	<div class="bar"><h2>Applied Geospatial Techniques (AGT)</h2></div> <!-- #ID# #SUBJECT# Change the text to fit a subject you gave done yourself-->
+	<div class="academic-intro">
+		Applied Geospatial Techniques (AGT) is a unique but very practical and interesting subject done in both geospatial science and surveying. The subject uses 
+		knowledge from three different disciplines:
+		<ul>
+			<li>Surveying</li>
+			<li>Geographical Information Systems (GIS)</li>
+			<li>Cartography</li>
+		</ul>
+		<p>
+		For the 2019 version of the course which I completed, the assignment was about the proposal of creating an amphitheatre at Deep Rock Oval located at Yarra Bend Park.
+		The main deliverables of the subject consisted of producing:
+		<ul>
+			<li>Topographic survey map of Deep Rock Oval</li>
+			<li>3D generated scene of the proposed amphitheatre</li>
+			<li>Amphitheatre and Pathway plan of the proposed site</li>
+			<li>Final map of the amphitheatre proposal</li>
+		</ul>
+		</p>
+		<p>
+			The topographic survey map was created using surveying data obtained on the field using a total station at Deep Rock Oval, Yarra Bend Park.
+			The topographic map was made using LISCAD.SEE and LISCAD.CAD. The 3D generated scene was created using the ArcGIS suite program ArcScene while the raw data was
+			modified in ArcMap. The proposed pathway was created using ArcMap by using the GIS program to generate the pathway based on slope angle and the amphitheatre
+			based on z-values. The final map used Adobe Illustrator to create the map along with ArcMap for exporting the 2D amphitheathre image and ArcScene for 
+			exporting the image of the 3D scene.
+		</p>
+		<p>
+			<b>Note:</b> If map display is too small, right-click the image and 'Open in new tab' to allow zooming of the map.
+		</p>
+	</div>	
+
+	<div class="bar"><h3>Topographic survey map (Surveying component)</h3></div>
+	<img src="Academic-Gallery/AGT-CAD.png" class="agt-survey"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<div class="bar"><h3>3D Amphitheatre and pathway plan (GIS component)</h3></div>
+	<img src="Academic-Gallery/AGT-3D-Amphitheatre.png" class="agt-gis"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<img src="Academic-Gallery/AGT-Amphitheatre.jpg" class="agt-gis"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+	<div class="bar"><h3>Final map of proposal(Cartography component)</h3></div>
+	<img src="Academic-Gallery/AGT-Map.png" class="agt-carto"> <!-- #ID# #PICTURE# Change to a picture of YOUR assignment images -->
+
+	<!--INDUSTRY EXPERIENCE-->
+
+	<div class="pagetitle" id="industryexperience">
+        <span class="title-ul">Industry Experience</span>
+    </div>
+	<div class="academic-intro">
+		This page will briefly cover all my work experience (as of September 2022) within the geospatial science industry. The two main companies that I have worked at 
+		were AAM Group and Tetra Tech. This page will outline my experience gained and skills I have learned from working at AAM Group and Tetra Tech along with an
+		overview of my current geospatial skillset.
+	</div>
+
+	<!--COMPANY 1-->
+
+    <div class="bar"><h3>AAM Group</h3></div> <!-- #ID# #COMPANY# Change to your company name-->
+	<img src="AAM-logo.png" class="company-logo">
+	<div class="job-title">Geospatial Intern - Image Processor</div> <!-- #ID# #COMPANY# Change to your company position-->
+	<div class="job-time">April 2021 - March 2022</div> <!--Change the month and year worked-->
+	<div class="job-overview">
+		My time at AAM Group was part of an internship for the thirty day work experience subject. The work experience subject taught me a lot about what industry
+		standard work is done within the geospatial industry. I chose to work at AAM Group as I read about it online on how it is a large company that does a lot of
+		geospatial activity and to my personal knowledge, is one of the few companies that specialise solely on different forms of geospatial work as their primary
+		source of business compared to other companies that have a spatial team but the company itself does not specialise in geospatial work. The work at AAM Group in 
+		the Melbourne office was less about performing geospatial analysis on pre-existing data, but rather capturing and collecting their own spatial data which 
+		the mapping team process and edit into a usable form for the client.
+		<p>
+		As part of the mapping team, the work I was exposed to was editing and processing aerial imagery-based data. The work consisted of editing out distortions and 
+		errors in the aerial imagery, manipulating colour bands of the orthomosaics to brighten or darken the imagery to the client's needs and creating Digital 
+		Terrain Models from provided LIDAR captured imagery from elevation models. My work at AAM Group used less ArcGIS products than I initially believed, using
+		other programs such as Global Mapper and AAM-exclusive products due to their Melbourne work being focused on aerial imagery rather than spatial data analysis.
+		</p>
+	</div>
+
+	<!--COMPANY 2-->
+
+	<div class="bar"><h3>Tetra Tech</h3></div> <!-- #ID# #COMPANY# Change to your company name-->
+	<img src="Tetra-Tech-logo.png" class="company-logo">
+	<div class="job-title">Graduate Geospatial Consultant</div> <!-- #ID# #COMPANY# Change to your company position-->
+	<div class="job-time">May 2022 - Present (as of September 2022)</div> <!--Change the month and year worked-->
+	<div class="job-overview">
+		My work at Tetra Tech as part of the spatial team involves using the ArcGIS suite for producing figures and maps for both internal staff members from other
+		departments and entites from external companies. The work is primarily modifying and publishing maps based on the specifications outlined by the client, either
+		editing the pre-existing data to be updated or creating new figures and information for visualisation on the maps. A lot of the work requires knowledge of
+		programming languages such as Python, Visual Basic (VB) and SQL to assist with automating tasks and sorting through spatial databases and attribute tables. 
+		<p>
+		The work that I have done is not limited to spatial analysis. At one point, I was publishing raster datasets for Web GIS-use and another, I was checking off
+		graphs to make sure that the graphs had all the data required on them, either adding the data onto the graph myself if the data is available or outlining the 
+		graphs with the missing data for inspection by another staff member if I cannot add the data onto the graph myself.			
+		</p>
+	</div>
+
+	<!--Skills and Proficiencies table-->
+	<div class="bar" style="top:57px" id="sap"><h2>Skills and Proficiencies</h2></div> <!-- #ID# #SKILLS# -->
+    <div class="skills">
+        <table class="icontable">
+            <tr>
+                <td><img src="Icons/GIS.png" class="iconimages"></td>
+				<td>GIS</td>
+                <td><img src="Icons/QGIS-icon.png" class="iconimages"></td>
+				<td>QGIS</td>
+            </tr>
+            <tr>
+                <td><img src="Icons/cartography-icon.png" class="iconimages"></td>
+				<td>Cartographic Principles</td>
+                <td><img src="Icons/adobe-illustrator.png" class="iconimages"></td>
+				<td>Adobe Illustrator</td>
+            </tr>
+            <tr>
+                <td><img src="Icons/rs-satellite-icon.png" class="iconimages"></td>
+				<td>Remote Sensing</td>
+                <td><img src="Icons/drone-icon.png" class="iconimages"></td>
+				<td>Photogrammetry and Drone Mapping</td>
+            </tr>
+            <tr>
+                <td><img src="Icons/web-design.png" class="iconimages"></td>
+				<td>Web Design: HTML & CSS</td>
+                <td><img src="Icons/webgis.png" class="iconimages"></td>
+				<td>Web GIS</td>
+            </tr>
+            <tr>
+                <td><img src="Icons/python-icon.png" class="iconimages"></td>
+				<td>Python Programming</td>
+                <td><img src="Icons/sql.png" class="iconimages"></td>
+				<td>SQL Database Management</td>
+            </tr>
+        </table>
+    </div>
+
+	<!-- #ID# #CREDITS#-->
+	<div class="pagetitle" id="credits">
+        <span class="title-ul">Credits and Attributions</span>
+    </div>
+    
+    <div class="academic-intro">
+       <b> The following programming languages and software were used to create the website</b>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Visual Studio Basic</li>
+        </ul>
+       <b>The deliverables contains content from the following subjects:</b>
+        <ul>
+            <li>Cartography 2 (GEOM2079)</li>
+            <li>Applied Geospatial Techniques (GEOM2083)</li>
+        </ul>
+       <b>Special thanks to the following people who have helped me make this website with their expertise and guidance:</b>
+        <ul>
+            <li>Chayn Sun</li>
+            <li>Barbara Kasieczka</li>
+            <li>Shuyi Cai</li>
+            <li>Kaige Wang</li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a> and <a href="https://stackoverflow.com/">Stack Overflow</a> (a lot!)</li>
+            <li><a href="https://www.flaticon.com/">Flaticon</a></li>
+        </ul>
+        As per the policy of using the Flaticons with a free account, the attributions and crediting of the creators of the icons are as below:
+		
+	<div class="bar"><h2>Attributions of icons used:</h2></div>
+    <table id="attribution-table">
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/database" title="database icons">Database icons created by Stockio - Flaticon</a></th>
+            <th><img src="Icons/sql.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/draw" title="draw icons">Draw icons created by monkik - Flaticon</a></th>
+            <th><img src="Icons/cartography-icon.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/adobe-illustrator" title="adobe illustrator icons">Adobe illustrator icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/adobe-illustrator.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/python-icon.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/web-design.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/web-site" title="web site icons">Web site icons created by wanicon - Flaticon</a></th>
+            <th><img src="Icons/webgis.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/drone" title="drone icons">Drone icons created by Smashicons - Flaticon</a></th>
+            <th><img src="Icons/drone-icon.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/satellite" title="satellite icons">Satellite icons created by Freepik - Flaticon</a></th>
+            <th><img src="Icons/rs-satellite-icon.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></th>
+            <th><img src="linkedin.png" class="icon-attribute"></th>
+        </tr>
+        <tr>
+            <th><a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Bogdan Rosu - Flaticon</a></th>
+            <th><img src="twitter.png" class="icon-attribute"></th>
+        </tr>
+    </table>
+	</div>
+
+
+
+	<div class="footer"> <!-- #ID# #FOOTER# -->
+		<div class="compilationinformation"> <!-- #ID# #COMPINFO# -->
+			<b>Compilation information</b>
+			<br>Website made in Adobe Dreamweaver and Visual Studio Code.
+			<br>HTML and CSS code written by Odeo as part of undergraduate Professional Practice course (GEOMOD10).
+		</div>
+		<table class="contacttable">
+			<caption><h2>Contact Information</h2></caption>
+			<tr>
+				<th><img src="mappin.png" alt="pointer" class="contactimages"></th>
+				<th><img src="mail.png" alt="email" class="contactimages"></th>
+				<th><img src="phone.png" alt="phone" class="contactimages"></th>
+			</tr>
+			<tr>
+				<th>
+					Work address:
+					<br>742 Evergreen Terrace, Springfield, Oregon, 97403</th>
+				<th>
+					Email Ou Di Wan Lee here:
+					<br><a href = "mailto:odieobright@student.rmit.edu.au">odieobright@student.rmit.edu.au</a>
+				</th>
+				<th>Mobile:
+					<br>3102-310-771
+				</th>
+			</tr>
+		</table>
+	</div>
+</body>
+<script> //Code for opening and closing sidebar. DO NOT TOUCH OR EDIT THIS AS THIS IS WHAT WORKS THE SIDEBAR NAVIGATION
+    function open_sidebar() {
+      document.getElementById("sidebar").style.display = "block";
+    }
+    function close_sidebar() {
+      document.getElementById("sidebar").style.display = "none";
+    }
+</script>
+</html>

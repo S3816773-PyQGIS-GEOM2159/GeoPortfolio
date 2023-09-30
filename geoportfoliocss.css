@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+
+.self-portrait{
+	height: 500px; /* #ID# #SP HEIGHT# Edit the height of your photo here by px e.g. 100px */
+	width: auto; /* #ID# #SP WIDTH# Edit the width of your photo here by px e.g. 100px */
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+/*Applied Geospatial Techniques images*/
+.agt-survey{
+	width: auto;
+	height: 700px;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+}
+.agt-gis{
+	width: 40%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.agt-carto{
+	width: auto;
+	height: 1000px;
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+/*Cartography*/
+.carto-crop{
+	clip: rect(0px,60px,200px,0px);
+}
+.ls-image{ /* #ID# #LANDSCAPE# */ 
+	width: auto; /*Change width here*/
+	height: 800px; /*Change height here*/
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 1000px;
+	padding: 5px;
+}
+.pr-image{ /* #ID# #PORTRAIT# */
+	width: auto; /*Change width here*/
+	height: 900px; /*Change height here*/
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* #START DNT# DO NOT MODIFY THE CSS BETWEEN HERE AND #END DNT# UNLESS EXPLICITLY STATED*/
+body {
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif; /* #ID# #FONT# - Modifies the font of the page*/
+	margin: 0px;
+}
+.header{ /*Header*/
+	background-color: #84b89e; /* #ID# #COLOR# Change color of the background header. */
+	height: 70px; /*Original value is 130px*/
+	vertical-align: middle;
+	overflow: hidden;
+	position: sticky; 
+	top: 0; 
+	z-index: 1;
+}
+a:link { /*Changes colour of links*/
+	color: inherit;
+	background-color: transparent;
+  }
+
+h1 {
+	font-size: 60px;
+}
+/*Navigation SIDEBAR*/
+#sidebar{ /*WEBSITE WITHOUT MODIFICATIONS HAS THIS AS AN ID (#) RATHER THAN A COMMENT (.)*/
+	height:100%;
+	width:250px;
+	background-color:#f5f6f7;
+	position:fixed!important;
+	z-index:2;
+	overflow-x: hidden;
+}
+.sidebar-animate-open{
+		position:relative;
+		animation:animateleft 0.4s
+	}
+@keyframes animateleft{
+		from{
+			left:-300px;opacity:0
+		} 
+		to{left:0;opacity:1}
+}
+.sidebar-menu-button{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:top;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	cursor:pointer;
+	white-space:nowrap;
+}
+.mainbutton{ /*Button to open a page*/
+	width: 240px;
+	float: left;
+	font-size: 20px;
+}
+.dropdown-button{ /*Sub-menu button font size*/
+	font-size: 15px;
+	width: 240px;
+	float: left;
+}
+.open-sidebar-button{
+	font-size: 40px;
+}
+.close-sidebar-button{
+	float: right;
+	font-size: 20px;
+}
+.other-sidebar-info{
+
+	width:100%;
+}
+.sidebar-images{
+	height: 30px;
+	width: auto;
+	
+}
+.sidebar-contact-table{
+	margin-left: 40px;
+    width: 270px;
+    position: relative;
+    top: 5px;
+}
+
+.sidebar-menu-button:hover{
+	color:#000!important;
+	background-color:#ccc!important;
+	
+}
+.sidebar-menu-button a.active {
+	background-color: limegreen;
+	color: black;
+}
+/*Navigation bar*/
+.navbar{
+	list-style-type: none;
+	width: auto;
+	margin: 0;
+	float: right;
+	position: relative;
+}
+.navbarli{ 
+	float: left; /*To make sure the list goes in order as floating right would reverse the list order*/
+	margin-top: 76px;
+}
+.navbar a {
+	color: white;
+	background-color:black;
+	text-align: center;
+	display: block;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.navbar a.active {
+	background-color: limegreen;
+	color: black;
+}
+.navbar a:hover:not(.active) {
+	background-color: #ddd;
+	color: black;
+}
+/*Home page map*/
+.mapbgdiv{
+	margin: 20px;
+	position: relative;
+}
+.mapbg{
+	width: 100%;
+	height: 600px;
+	filter: brightness(70%) blur(4px);
+}
+.title{ /*Title box*/
+	color: white;
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0.55); /*the fourth number changes opacity*/
+	text-align: center;
+	margin: auto;
+	position: relative;
+	bottom: 400px;
+	width: 500px;
+}
+/*Recurring bars on home page*/
+.bar{
+	color: white;
+	background-color: rgba(115,110,110,1.00);
+	text-align: center;
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+.pagetitle{
+	font-weight: bolder;
+	font-size: 40px;
+	width: auto;
+	text-align: center;
+	margin: auto;
+}
+.title-ul{ /*Controls the underline of page titles*/
+	border-bottom: 4px solid #84b89e;
+}
+.intro{
+	top: -150px;
+}
+.about{
+	text-align: left;
+	position: relative;
+	bottom: 100px;
+	font-size: 16px;
+	/*font-weight: bolder;*/
+	margin: auto;
+	width: 1200px;
+}
+/*Footer*/
+.footer{
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: rgb(115,110,110);
+	height: 250px;
+}
+.contacttable{
+	color: white;
+	vertical-align: middle;
+	margin-top: 0px;
+	float: left;
+	width: 80%;
+	table-layout: fixed;
+}
+.contactimages{
+	width: auto;
+	height: 60px;	
+}
+.compilationinformation{
+	right: 0;
+	height: 220px;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	background-color: #84b89e;
+	position: absolute;	
+	width: 20%;
+	padding-top:30px;
+}
+
+/*Academic Intro*/
+.academic-intro{
+	text-align: left;
+	width: 70%;
+	margin:auto;
+	margin-top: 40px;
+}
+/*Industry Information*/
+.skills{
+	background-color: #ccc;
+}
+.icontable{
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	border-spacing: 60px;
+}
+.iconimages{
+	width: auto;
+	height: 80px;
+}
+.company-logo{
+	height: 100px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.job-title{
+	text-align: center;
+	width: 70%;
+	margin:auto;
+	margin-top: 40px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.job-time{
+	text-align: center;
+	width: 70%;
+	margin:auto;
+	margin-top: 20px;
+	font-size: 17px;
+	font-weight: bolder;
+}
+.job-overview{
+	text-align: left;
+    width: 50%; /*Originally 40% for original plan*/
+    margin: auto; /*Originally margin-left: 80px; for original plan*/
+    margin-top: 40px;
+    left: 50%;
+    display: block;
+}
+
+/*Credits*/
+#attribution-table{
+	margin-left: auto;
+	margin-right: auto;
+}
+.icon-attribute{
+	width: auto;
+	height: 50px;
+}
+/* #END DNT#  */
+
+/*Class modifications outside of size modifications will not affect images.*/
+/*To modify images fitting on webpage, modify the div where the image is inside*/
